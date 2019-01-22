@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../../css/reset.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="main">
+    
+        <div class='searchBox'>
+                <div class='searchTop clearfix'>
+                        <em class='close'></em>
+                        <div class="search-input">
+                            <input type="text"/>
+                            <span class="search-icon"></span>
+                        </div>
+                </div>
+                <div class='searchHot'>
+                    <h5>热门搜索</h5>
+                    <div class='searchContenet'>
+                        <ul class='clearfix'>
+                            <li>休闲鞋</li>
+                            <li>小白鞋</li>
+                            <li>连衣裙</li>
+                            <li>马丁靴／黑色</li>
+                            <li>单鞋/小白鞋</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+               
+                <div class='searchHistory'>
+                    <div class='searchButton clearfix'>
+                        <h6>搜索历史</h6>
+                        <span class="">清空</span>
+                    </div>
+                    <div  class='searchList'>
+                        <ul>
+                             <li>休闲鞋</li>
+                             <li>休闲鞋</li>
+                             <li>休闲鞋</li>
+                             <li>休闲鞋</li>
+                       
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+
+    <script>　
+            (function anonymous() {
+                function computed() {
+                    let HTML = document.documentElement,
+                        winW = HTML.clientWidth,
+                        desW = 750;
+                    if (winW >= desW) {
+                        HTML.style.fontSize = "100px";
+                        return;
+                    }
+                    HTML.style.fontSize = (winW / 750) * 100 + "px"; //=>HTML中单独编写的代码尽量不要出现{}等操作，例如：ES6模板字符串，否则WEBPACK编译失败
+                }
+                computed();
+                window.addEventListener("resize", computed, false);
+            })();
+    </script>
+</body>
+</html>

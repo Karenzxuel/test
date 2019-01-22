@@ -1,0 +1,509 @@
+.main{
+    width: 7.5rem;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background-color: #eeeeee;
+   height: 3000px; 
+}
+.bg1{background-color: rgba(0, 0, 0, 0);position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;}
+.bg2 {background-color: rgba(230, 1, 17, 0.8);padding-bottom: .243rem;position: fixed;top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;}
+.header {
+    /* background-color: rgba(0, 0, 0, 0); */
+    /*rgba(0, 0, 0, 1); */
+    /* padding: 0.1rem 0.16rem; */
+    padding-top: 0.16rem;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2; */
+    width: 7.5rem;
+    height: 0.5rem;
+    margin: 0 auto;
+}
+
+
+.header .header-left {
+    float: left;
+    width: 1rem;   /*50px*/
+    height: 0.6rem; /*30px*/
+    margin-left: 0.22rem; /*11px*/
+
+}
+
+.header .header-left img {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+
+.header .header-middle {
+    float: left;
+    position: relative;
+    /* width: 349px; */
+    height: 0.46rem;/*23px*/
+    margin-left: 0.4rem; /*23px*/
+    padding-top: 0.04rem;
+}
+
+.header .header-middle input {
+    width: 4.98rem; /*249px*/
+    height: 100%;
+    border-radius: 0.4rem; /*20px*/
+    border: none;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.header .header-middle .bg-search {
+    position: absolute;
+    top: 0.11rem; /*3px*/
+    left: 0.1rem; /*5px*/
+    float: left;
+    background: url('../img/search.png') no-repeat center center;
+    width: 0.32rem; /*16px*/
+    height: 0.32rem; /*16px*/
+    background-size: 0.32rem;
+}
+
+.header .header-right {
+    float: right;
+    width: 0.8rem; /*40px*/
+    height: 100%;
+    text-align: center;
+}
+
+.header .header-right .bg-msg {
+    float: left;
+    display: block;
+    background: url('../img/msg.png') no-repeat center center;
+    width: 0.8rem;/*40px*/
+    height: 0.32rem; /*16px*/
+    background-size: 0.32rem;
+}
+
+.header .header-right strong {
+    color: #ffffff
+}
+
+.swiper-container {
+    width: 7.5rem;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 轮播图下的小图标 */
+
+.application ul li{
+    width: 1.87rem;
+    height: 1.2rem;
+    float: left;
+}
+.application ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 元旦节日 */
+
+.application {
+    width: 7.5rem;
+    margin: 0 auto;
+}
+.application ul li, .holiday .pic-three li{
+    float: left;
+}
+
+.holiday .pic-four li {
+    float: left;
+    width: 1.874rem;
+    height: 2.3rem;
+    
+
+}
+.holiday .pic-three li {
+    width: 2.4996rem;
+    height: 3.1568rem;
+}
+.holiday ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 热门分类 */
+
+.classiy {
+    background-color: #ffffff;
+    padding-top: 0.32rem;
+}
+.classiy h4{
+    
+    margin-left: 0.2rem;
+    font-size: 0.35rem; 
+    color: #222222;
+    
+}
+
+.classiy .pic-text li{
+    float: left;
+    width: 1.82rem;
+    height: 1.8rem;
+}
+.classiy a {
+    display: block;
+}
+.brand-icon {}
+.brand-icon li {
+    float: left;
+    width: 1.48rem;
+    height: 1.26rem;
+}
+
+
+/* 限时秒杀 */
+.spike {
+    margin-top: 0.32rem;
+    padding-bottom: 0.32rem;
+    background-color: #ffffff;
+}
+.spike .spike-left{
+    float: left;
+    width: 3.16rem;
+    height: 3.34rem;
+    margin-left: 0.1rem
+}
+.spike-right {
+    float: left;
+    width: 3.7rem;
+    height: 3.34rem;
+    margin-left: 0.25rem;
+    
+}
+.spike-right .spike-right-top {
+    padding-bottom: 0.15rem;
+    position: relative;
+    border-bottom: 1px solid #eeeeee;
+
+}
+.spike-right .spike-right-top .seckillTime-title {
+    float: left;
+    font-family: PingFangSC-Semibold;
+    opacity: 0.8rem;
+    font-size: 0.24rem;
+}
+
+.spike-right .spike-right-top .seckillTime {
+    margin-left: 1rem; 
+    text-align: center;
+}
+.spike-right .spike-right-top .seckillTime span {
+ width: 0.28rem;
+ height: 0.32rem;
+ font-size: 0.24rem;
+ margin-left: .1rem;
+ border-radius: .1rem;
+ padding: .05rem;
+ color: #ffffff;
+ display: inline-block;
+ background-color: #222222;
+}
+.spike-right .spike-right-top .boot-sale{
+    font-family: PingFang-SC-Regular;
+    font-size: .28rem;
+    color: #9446FF;
+    margin-top: .1rem;
+}
+.spike-right .spike-right-top .explosive-spike {
+    font-family: PingFang-SC-Medium;
+    font-size: .2rem;
+    margin-top: .1rem;
+}
+
+.spike-right .spike-right-top .go-font {
+    font-family: PingFang-SC-Medium;
+    font-size: .2rem;
+    margin-top: .1rem;
+  
+}
+.spike-right .spike-right-top .right {
+    width: 1.62rem;
+    height: 1.22rem;
+    position: absolute;
+    bottom:0.1rem;
+    right: 0;
+}
+
+.spike-right-bottom {
+    margin-top: .15rem;
+    position: relative;
+}
+.spike-right-bottom .color-font{
+    font-family: PingFang-SC-Regular;
+    font-size: .28rem;
+    color: #FF4664;
+}
+.spike-right-bottom .goods-limit {
+    font-family: PingFang-SC-Medium;
+    font-size: .2rem;
+    margin-top: .05rem;
+
+}
+.spike-right-bottom .go-font {
+    font-family: PingFang-SC-Medium;
+    font-size: .2rem;
+    margin-top: .05rem;
+}
+.spike-right-bottom .right {
+    width: 1.65rem;
+    height: 1.3rem;
+    position: absolute;
+    bottom:0.1rem;
+    right: 0;
+}
+
+/* 精选活动 */
+.selected-actives {
+    background-color: #ffffff;   
+    padding-bottom: .2rem;
+}
+::-webkit-scrollbar{
+    /* 去除浏览器滚动条 */
+    display:none;
+  }
+.selected-actives .out-box{
+    margin-top: .1rem;
+    overflow: auto;
+    width: 7.5rem;
+}
+.selected-actives .list {
+    overflow: auto;
+    width: 500px;
+}
+.selected-actives .list li {
+    float: left;
+    width: 152px;
+    height: 184px;
+    margin-left: 12px;
+}
+.selected-actives .list li a {
+    display: inline-block;
+}
+
+/* 品牌专区 */
+.brand-zone{
+    background-color: #ffffff;
+    margin-top: .1rem;
+    margin-bottom:.2rem;
+}
+.brand-zone .title-img {}
+.brand-zone .brand-pic {
+    padding-top: .2rem;
+}
+.brand-zone .brand-pic h6 {
+    width: 6.82rem;
+    height: 2.88rem;
+    margin-left: .33rem;
+}
+.brand-zone .brand-box {
+    width: 7.5rem;
+    overflow: auto;
+}
+.brand-zone .brand-box .brand-list {
+    width: 19.9rem;
+    margin-top: .1rem;
+    padding-bottom: .15rem;
+    float: left;
+}
+
+.brand-zone .brand-box .brand-list li {
+    float: left;
+    width: 1.84rem;
+    height: 2.62rem;
+    margin-right: .15rem;
+    text-align: center;
+}
+.brand-zone .brand-box .brand-list li a{
+    display: inline-block;
+}
+.brand-zone .brand-box .brand-list li p {
+    width: 1.94rem;
+    height: 2.3rem;
+}
+.brand-zone .brand-box .brand-list li span{
+    display: inline-block;
+    font-size: .22rem;
+    color: #333;
+    text-align: center;
+    font-family: PingFang-SC-Medium;
+    /* margin-left: .1rem; */
+}
+.brand-zone .brand-box .brand-list li del {
+    display: inline-block;
+    font-size: .22rem;
+    color: #999;
+    text-align: center;
+    font-family: PingFang-SC-Medium;
+    margin-left: .1rem;
+}
+.brand-zone .brand-box .brand-list .more {    
+    width: 1.4rem;
+    height: 2.62rem;
+    text-align: center;
+
+}
+.brand-zone .brand-box .brand-list .more span{
+    display: block;
+    font-family: PingFang-SC-Regular;
+    font-size: .22rem;
+    color: #333;
+    margin-top: .9rem;
+}
+.brand-zone .brand-box .brand-list .more span:nth-of-type(2) {
+    margin-top: .1rem;
+    
+}
+
+/* 为你推荐 */
+.recommended-you {
+    background-color: #ffffff;
+}
+.recommended-you .recommended {
+    font-family: PingFang-SC-Medium;
+    font-size: .28rem;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: .78rem;
+    margin-left: .2rem;
+    margin-bottom: .1rem;
+}
+.recommended-you .title-nav {
+    padding-bottom: .2rem;
+    border-bottom: 0.02rem solid #eeeeee;
+}
+.recommended-you .title-nav li {
+    float: left;
+    width: 1.56rem;
+    height: .5rem;
+    font-size: .22rem;
+    line-height: .5rem;
+    text-align: center;
+}
+.recommended-you .title-nav li:nth-of-type(4){
+    float: right;
+    margin-right: 0.35rem;
+    background-color: #333;
+    color: #fff;
+    font-size: .22rem;
+    font-family: PingFang-SC-Medium;
+    border-radius: .5rem;
+    float: right;    
+}
+.active {
+    color: #ff4664;
+    text-decoration: underline;
+}
+.recommended-you .recommended-pic {
+
+}
+.recommended-you .recommended-pic li {
+    float: left;
+    width: 1.7rem;
+    height: 2.34rem;
+    margin-left: .1rem;
+    background-color: #ffffff;
+}
+.recommended-you .recommended-pic li a {
+    display: inline-block;  
+}
+.recommended-you .recommended-pic li a h6 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.recommended-you .recommended-pic li a p {
+    color: #333;
+    font-size: .22rem;
+    font-family: PingFang-SC-Medium;
+    text-align: center;
+}
+
+/* others */
+.others {
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    background: #f8f8f8;
+    border-top: 0.02rem solid #ddd;
+    border-bottom: 0.02rem solid #ddd;
+}
+.others .login-reg {
+    float: left;
+}
+.others .login-reg a,.others .login-reg a span,  .others .login-reg em{display: inline-block;}
+.others .login-reg em{font-style:normal;margin-left: .2rem;height: .1rem;}
+.others .login-reg a {
+    font-size: 0.28rem;
+    color: #666;
+    margin-left: .2rem;
+}
+.others .download {float: right;}
+.others .download a, .others .download span {display: inline-block;}
+.others .download a {
+    font-size: .28rem;
+    color: #666;
+    margin-right: .2rem;
+}
+.others .company, .others .company-info{
+    display: block;
+    text-align: center;   
+}
+.others .company {
+    margin-top: .6rem;
+    margin-bottom: .1rem;
+}
+
+/* 底部导航 */
+.footer-nav {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.footer-nav .nav-icon li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.footer-nav .nav-icon li a, 
+.footer-nav .nav-icon li a i {
+    display: inline-block;
+}
+.footer-nav .nav-icon li a i {
+    height: .92rem;
+    width: .46rem;
+    background-size: .8rem;
+}
+.home{background: url('../img/footer_1.png') center center no-repeat;}
+.classify{background: url('../img/footer_2.png') center center no-repeat;}
+.find {background: url('../img/footer_3.png') center center no-repeat;}
+.shop{background: url('../img/footer_4.png') center center no-repeat;}
+.person {background: url('../img/footer_5.png') center center no-repeat;}

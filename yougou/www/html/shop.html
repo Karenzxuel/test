@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shop</title>
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+    <div class="shop-box main">
+            <div class="shop-header-box ">
+                    <i class="arrow-left"></i>
+                    <p>购物车</p>
+                    <span>登录</span>
+            </div>
+
+            <!-- 购物车没有东西的时候 激活样式 active-->
+            <div class="shop-icon">
+                <i></i>
+                <p>购物车是空的</p>
+                <div class="content-box">
+                    <p class="title"><span>为你推荐</span></p>
+                    <ul class="list clearfix">
+                        <li class="clearfix none"><a href="javascript:;">
+                                <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                                <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                                <p class="price">¥1598</p>
+                                <del class="del">¥2000</del>
+                        </a></li>
+                        <li class="clearfix"><a href="javascript:;">
+                                <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                                <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                                <p class="price">¥1598</p>
+                                <del class="del">¥2000</del>
+                        </a></li>
+                        <li class="clearfix"><a href="javascript:;">
+                                <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                                <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                                <p class="price">¥1598</p>
+                                <del class="del">¥2000</del>
+                        </a></li>
+                        <li class="clearfix"><a href="javascript:;">
+                                <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                                <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                                <p class="price">¥1598</p>
+                                <del class="del">¥2000</del>
+                        </a></li>
+                        <li class="clearfix"><a href="javascript:;">
+                                <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                                <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                                <p class="price">¥1598</p>
+                                <del class="del">¥2000</del>
+                        </a></li>
+                        
+                    </ul>
+                </div>
+                <div class="last-txt">
+                        <p class="title"><span>没有更多了</span></p>
+                </div>
+                
+            </div>
+
+
+            <!-- 购物车有东西的时候 激活样式 active-->
+            <div class="shop-car-info active">
+                <div class="check-all">
+                    <!-- 激活样式 -->
+                    <em class="choose active"></em>
+                    <span>百丽优购</span>
+                </div>
+                <ul class="shop-list">
+                    <li class="clearfix"><a href="javascript:;">
+                        <p class="title">Nike耐克男子NIKE AIR SPAN II PRM复刻鞋AO1546-700</p>
+                        <div class="shop-list-info-left clearfix">
+                            <!-- 激活样式 active-->
+                            <em class="choose active"></em>
+                            <h6><img src="../img/shop_car_pic1.jpg" alt=""></h6>
+                        </div>
+                        <div class="shop-list-info-right">
+                            <p class="color">颜色：麦黄/麦黄/浅骨灰/橡皮中褐/黑/麦芽棕 </p><span class="price">¥559</span>
+                            <p class="size">尺码：44</p>
+                            <p class="send">发货：百丽优购</p>  
+                            <p class="options clearfix">
+                                <!-- i标签的激活样式 -->
+                                <i class="minus active"></i>
+                                <span class="num">1</span>
+                                <i class="add"></i>
+                                <em class="del"></em>
+                            </p>      
+                        </div>
+                    </a></li>
+                </ul>
+
+                <div class="shop-footer clearfix">
+                    <p class="all clearfix">
+                        <!-- 激活样式 active -->
+                        <i class="circul active"></i>
+                        <span class="all-text">全部</span></p>
+                    <p class="total-sum-box">
+                        <span class="total">总计：</span>
+                        <span class="shop-price"><em>¥350</em>（不含运费）</span>
+                    </p>
+                    <p class="calculation">去结算<em>(1)</em></p>
+                </div>
+            </div>
+    </div>
+
+    <script>
+            (function anonymous() {
+                function computed() {
+                    let HTML = document.documentElement,
+                        winW = HTML.clientWidth,
+                        desW = 750;
+                    if (winW >= desW) {
+                        HTML.style.fontSize = "100px";
+                        return;
+                    }
+                    HTML.style.fontSize = (winW / 750) * 100 + "px"; //=>HTML中单独编写的代码尽量不要出现{}等操作，例如：ES6模板字符串，否则WEBPACK编译失败
+                }
+                computed();
+                window.addEventListener("resize", computed, false);
+            })();
+    </script>
+</body>
+</html>

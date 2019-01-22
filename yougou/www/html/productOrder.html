@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>排序</title>
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/productOrder.css">
+</head>
+<body class="main">
+
+    <div class="sort-box">
+        <div class="header clearfix">
+            <i class="back"></i>
+            <div class="input clearfix">
+                <input type="text" placeholder="请输入关键字">
+                <span></span>
+            </div>
+            <p class="home">
+                <span></span>
+            </p>
+
+        </div>
+        <div class="change-tab">
+            <ul class="tab clearfix">
+                <!-- 激活样式 active -->
+                <li>综合</li>
+                <li>销量</li>
+                <li class="price-txt active">
+                    <span>价格</span>
+                    <i class="up active"></i>
+                    <i class="down"></i>
+                </li>
+                <li>新品</li>
+                <li class="select">
+                    <span>筛选</span><span class="select-icon"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="content-box">
+            <ul class="list clearfix">
+                <li class="clearfix none"><a href="javascript:;">
+                        <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                        <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                        <p class="price">¥1598</p>
+                        <del class="del">¥2000</del>
+                </a></li>
+                <li class="clearfix none"><a href="javascript:;">
+                        <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                        <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                        <p class="price">¥1598</p>
+                        <del class="del">¥2000</del>
+                </a></li>
+                <li class="clearfix none"><a href="javascript:;">
+                        <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                        <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                        <p class="price">¥1598</p>
+                        <del class="del">¥2000</del>
+                </a></li>
+                <li class="clearfix none"><a href="javascript:;">
+                        <h6><img src="../img/pro_guess1.jpg" alt=""></h6>
+                        <p class="name">Belle/百丽冬季专柜同款黑油皮牛皮女短靴BKD43DD6</p>
+                        <p class="price">¥1598</p>
+                        <del class="del">¥2000</del>
+                </a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+        <script>
+                (function anonymous() {
+                    function computed() {
+                        let HTML = document.documentElement,
+                            winW = HTML.clientWidth,
+                            desW = 750;
+                        if (winW >= desW) {
+                            HTML.style.fontSize = "100px";
+                            return;
+                        }
+                        HTML.style.fontSize = (winW / 750) * 100 + "px"; //=>HTML中单独编写的代码尽量不要出现{}等操作，例如：ES6模板字符串，否则WEBPACK编译失败
+                    }
+                    computed();
+                    window.addEventListener("resize", computed, false);
+                })();
+        </script>
+    
+</body>
+</html>

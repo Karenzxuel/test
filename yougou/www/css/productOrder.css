@@ -1,0 +1,167 @@
+.main {
+    width: 7.5rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.header {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+.header .back{
+    padding: 8px 5px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: url('../img/arrow-left.png') no-repeat center center;
+    background-size: 10px;
+}
+.header .input {
+    position: relative;
+
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 17px; 
+  
+}
+.header .input input {
+    float: left;
+    width: 274px;
+    height: 26px;
+    text-align: center;
+    border-radius: 17px; 
+    border: none;
+}
+.header .input span{
+   display: inline-block;
+   position: absolute;
+   top: 2px;
+   right: 4px;
+    width: 22px;
+    height: 22px;
+    background: url('../img/search.png') no-repeat center center;
+    background-size: 16px; 
+}
+.header .home{
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+.header .home span:nth-of-type(2n+1) {
+    float: right;
+    width: 30px;
+    height: 22px;
+    background: url('../img/home.png') no-repeat center center;
+    background-size: 28px; 
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+.sort-box .tab {background-color: #fff;    border-bottom: 1px #ccc solid;}
+.sort-box .tab li {
+    float: left;
+    width: 75px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;   
+} 
+.sort-box .tab li.active{
+    color: red;
+}
+.sort-box .tab .price-txt{position: relative;}
+.sort-box .tab .price-txt .up.active {
+    float: left;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 11px;
+    height: 12px;
+    background: url('../img/up-red.png') no-repeat;
+    background-size: 10px;  
+}
+.sort-box .tab .price-txt .down.active{
+    float: left;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 11px;
+    height: 12px;
+    background: url('../img/down-red.png') no-repeat;
+    background-size: 10px; 
+}
+.sort-box .tab .select {
+    position: relative;
+}
+.sort-box .tab .select .select-icon{
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    right: 10px;
+    width: 11px;
+    height: 12px;
+    background: url('../img/select.png') no-repeat;
+    background-size: 10px;
+}
+
+
+.content-box{padding-top: 5px;}
+.content-box .list {padding: 0 7px;}
+.content-box .list li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 178px;
+    height: 267px;
+    padding-bottom: 3px;
+    background-color: #fff; 
+}
+.content-box .list li:nth-of-type(2n+2){
+    margin-right: 0;
+}
+.content-box .list li h6{
+    width: 168px;
+    height: 168px;  
+}
+.content-box .list li .name{
+    text-align: left;
+    padding: 0 5px;
+    height: 32px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #666;
+    font-size: .9em;
+    margin-top: 15px;
+}
+.content-box .list li .price{
+    margin-top: 3px;
+    margin-left: 5px;
+    text-align: left;
+    color: red;
+    font-size: 16px;
+    float: left;
+    margin-top: 15px;
+}
+.content-box .list li .del{
+    float: left;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-top: 15px;
+}

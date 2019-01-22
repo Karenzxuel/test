@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/find.css">
+</head>
+<body>
+    <div class="find-box main"> 
+        <div class="find-header-box">
+            <p>发现</p>
+            <span>登录</span>
+        </div>
+        <div class="find-title-box">
+            <i></i>
+            <p>时尚风向标</p>
+        </div>
+        <div class="find-contente">
+            <ul class="find-list">
+                <li><a href="javascript:;">
+                    <p>焕新年货节</p>
+                    <h5><img src="../img/find_1.jpg" alt=""></h5>
+                    <p>焕新年货节，抢券至高减500元</p>
+                </a></li>
+                <li><a href="javascript:;">
+                        <p>焕新年货节</p>
+                        <h5><img src="../img/find_1.jpg" alt=""></h5>
+                        <p>焕新年货节，抢券至高减500元</p>
+                </a></li>
+                <li><a href="javascript:;">
+                        <p>焕新年货节</p>
+                        <h5><img src="../img/find_1.jpg" alt=""></h5>
+                        <p>焕新年货节，抢券至高减500元</p>
+                </a></li>
+                <li><a href="javascript:;">
+                        <p>焕新年货节</p>
+                        <h5><img src="../img/find_1.jpg" alt=""></h5>
+                        <p>焕新年货节，抢券至高减500元</p>
+                </a></li>
+            </ul>
+        </div>
+</div>
+    <script>
+        (function anonymous() {
+            function computed() {
+                let HTML = document.documentElement,
+                    winW = HTML.clientWidth,
+                    desW = 750;
+                if (winW >= desW) {
+                    HTML.style.fontSize = "100px";
+                    return;
+                }
+                HTML.style.fontSize = (winW / 750) * 100 + "px"; //=>HTML中单独编写的代码尽量不要出现{}等操作，例如：ES6模板字符串，否则WEBPACK编译失败
+            }
+            computed();
+            window.addEventListener("resize", computed, false);
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.main {
+    width: 7.5rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+
+/*搜索*/
+.searchTop {
+    height: 34px;
+    padding: 8px 0 8px 10px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.searchTop .close {
+    float: left;
+    margin-top: 9px;
+    width: 22px;
+    height: 23px;
+    background: url('../../img/search-close.png') no-repeat;
+    background-size: 16px;
+    margin-right: 5px;
+    
+}
+
+.searchTop .search-input {
+    border: 1px solid #ccc;
+    float: left;
+}
+.searchTop .search-input {
+    position: relative;
+}
+
+.searchTop .search-input input {
+    margin-top: 3px;
+    width: 327px;
+    height: 28px;
+    text-align: center;
+    border-radius: 17px;
+    border: none;
+}
+
+.searchTop .search-input .search-icon{
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+    background: url(../../img/search.png) no-repeat;
+    background-size: 20px auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F1F1F1;
+    border-left: 1px solid #ccc;
+
+}
+
+
+.searchHot {
+    background-color: #fff; 
+    padding: 10px;
+}
+.searchHot h5{
+    color: #666;
+    font: 12px/1.5 "Microsoft YaHei", Helvetica, Arial, sans-serif;
+    
+}
+
+.searchHot .searchContenet {
+  
+}
+.searchHot .searchContenet li {
+    float: left;
+    padding: 5px;
+    background-color: #eee;
+    margin-right: 10px;
+    margin-top: 8px;
+    color: #666;
+    padding: 3px 12px;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.searchHot .searchContenet li:nth-last-child(){
+    margin-bottom: 0;;
+}
+
+.searchHistory {
+    margin-top: 10px;
+    background-color: #fff; 
+    padding: 3px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.searchHistory h6 {
+    float: left;
+    font-size: 14px;
+    color: black;
+    padding: 12px 0;
+    
+}
+.searchHistory span {
+    margin-top: 10px;
+    float: right;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.searchHistory .searchList {
+    background-color: #fff; 
+}
+.searchHistory .searchList li {
+    color: #666;border-bottom: 1px solid #ddd;
+    height: 26px;
+    margin-top: 10px;
+}
+
+.searchHistory .searchList li:nth-last-child(1){
+    border-bottom: none;
+}

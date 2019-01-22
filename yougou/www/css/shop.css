@@ -1,0 +1,392 @@
+.main {
+    width: 7.5rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+/* 购物车没东西   */
+.shop-header-box {
+    width: 7.5rem;
+    height: .9rem;
+    /* width: 7.5rem; */
+    background: #f8f8f8;
+    border-bottom: .02rem solid #ddd;
+}
+.shop-header-box .arrow-left{
+    width: 20px;
+    height: 20px;
+    background: url('../img/left.png') no-repeat;
+    float: left;
+    margin-left: 8px;
+    margin-top: 15px; 
+    font-style: normal;
+    background-size: 10px; 
+}
+.shop-header-box p {
+    float: left;
+    font-size: .36rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: .9rem;
+    margin-left: 3rem;
+   
+    /* padding-left: 60px; */
+}
+.shop-header-box span {
+    float: right;
+    display: inline-block;
+    color: #333;
+    line-height: .9rem;
+    margin-right: .2rem;
+    font-size: .26rem;
+
+}
+
+
+
+.shop-icon {
+    width: 7.5rem;
+    height: 1.38rem;
+    margin-top: 50px;
+    display: none;
+}
+.shop-icon.active{
+    width: 7.5rem;
+    height: 1.38rem;
+    margin-top: 50px;
+    display: block
+}
+
+.shop-icon i {
+    display: inline-block;
+    width: 1.2rem;
+    height: .86rem;
+    background: url('../img/shop_icon_car.png') no-repeat ;
+    background-size: 1.2rem; 
+    margin-left: 40%;
+}
+.shop-icon p{
+    margin-top: .2rem;
+    font-size: 1.2em;
+    text-align: center;
+}
+.content-box{padding-top: 15px;}
+.content-box .title{
+    border-top: 1px solid #bbb;
+    padding: 12px 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    text-align: center;
+    position: relative;
+}
+.content-box .title span{
+    background-color: #eee; 
+    float: left;
+    position: absolute;
+    top: -10px;
+    left: 43%;
+}
+.content-box .list {padding: 0 7px;}
+.content-box .list li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 178px;
+    height: 229px;
+    padding-bottom: 3px;
+    background-color: #fff; 
+}
+.content-box .list li:nth-of-type(2n+2){
+    margin-right: 0;
+}
+.content-box .list li h6{
+    width: 168px;
+    height: 168px;  
+}
+.content-box .list li .name{
+    text-align: left;
+    padding: 0 5px;
+    height: 32px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #666;
+    font-size: .9em;
+}
+.content-box .list li .price{
+    margin-top: 3px;
+    margin-left: 5px;
+    text-align: left;
+    color: red;
+    font-size: 14px;
+    float: left;
+}
+.content-box .list li .del{
+    float: left;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+.last-txt .title{
+    width: 300px;
+    border-top: 1px solid #ddd;
+    
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    text-align: center;
+    position: relative;
+    margin: 20px auto 20px auto;
+}
+.last-txt .title span{
+    background-color: #eee; 
+    float: left;
+    position: absolute;
+    top: -11px;
+    left: 43%;
+    color: #ccc;
+}
+
+
+
+
+
+/* 购物车有东西 active 激活*/
+.shop-car-info{display: none;}
+.shop-car-info.active{display: block;}
+.shop-car-info .check-all {
+    margin-top: .16rem;
+    height: 38px;
+    padding-top: 5px;
+    padding-left: 8px;
+    border-top: 1px solid #e3e5e9;
+    border-bottom: 1px solid #e3e5e9;
+    background: #f5f5f5;
+}
+.shop-car-info .check-all em {
+    float: left;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
+.shop-car-info .check-all em.active{
+    background: url('../img/checked-bg1.png');
+    background-size: 20px;
+    border: none;
+}
+
+.shop-car-info .check-all span {
+    float: left;
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.shop-list {
+    margin-bottom: 40px;
+}
+.shop-list li {
+    background-color: #fff;
+    padding: 5px 10px;
+}
+.shop-list li .title {
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 30px;
+    margin-bottom: 5px;;
+}
+.shop-list li .shop-list-info-left {
+   float: left;
+    margin-right: 12px;
+}
+
+.shop-list li .shop-list-info-left .choose {
+    float: left;
+    width: 20px;
+    height: 20px;
+    float: left;
+    border: 1px solid #ddd;
+    margin-top: 31px; 
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.shop-list li .shop-list-info-left .choose.active{
+    border: none;
+    background: url('../img/checked-bg1.png');
+    background-size: 20px; 
+}
+
+.shop-list li .shop-list-info-left h6 {
+    float: left;
+    width: 97px;
+    height: 97px;
+    border: 1px solid #ddd;
+    margin-left: 3px;
+}
+.shop-list li .shop-list-info-right {
+    width: 355px;
+position: relative;
+}
+.color, .size, .send {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+    font-size: 14px;
+    color: #7b7b7b;
+}
+
+.color {
+    width: 164px;
+}
+
+.shop-car-info .price {
+position: absolute;
+top: 0;
+right: 0;
+    color: #333;
+    font-family: arial, '微软雅黑';
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+.shop-list .options {
+    margin-top: 6px;
+   
+}
+.shop-list .options i{
+    float: left;
+    width: 28px;
+    height: 23px;
+    border: 1px solid #aaa;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+
+
+.shop-list .options .minus {
+    background: url('../img/minusN.png') no-repeat center center;
+    background-size: 12px;
+}
+.shop-list .options .minus.active{background-color: #eee;}
+.shop-list .options .add {
+    background: url('../img/addN.png') no-repeat center center;
+    background-size: 12px;
+}
+.shop-list .options .add.active{background-color: #eee;}
+.shop-list .options .num {
+    float: left;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 28px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+
+}
+.shop-list .options .del{
+    float: right;
+    width: 25px;
+    height: 31px;
+    background: url('../img/del.png') no-repeat;
+    background-size: 20px auto;
+}
+
+
+
+
+
+/* 购物车有东西  底部 */
+.shop-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 47px;
+    background: #fff;
+    padding-left: 10px;
+}
+.shop-footer p{
+    
+    float: left;
+    line-height: 40px;
+}
+.shop-footer .all{}
+.shop-footer .circul {
+    float: left;
+    margin-top: 12px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #666;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.shop-footer .circul.active {
+    width: 20px;
+    height: 20px;
+    background: url('../img/checked-bg1.png') no-repeat;
+    background-size: 20px auto; 
+    border: none;
+}
+
+.shop-footer .all-text {
+    float: left;
+    font-size: 15px; 
+    margin-top: 4px;
+}
+.shop-footer .total-sum-box{
+    width: 214px;
+    height: 46px;
+    
+}
+.shop-footer .total-sum-box .total {
+    float: left;
+    margin-top: 3px;
+    margin-left: 40px;
+    width: 48px;
+    font-size: 14px;
+}
+.shop-footer .total-sum-box .shop-price{
+    color: #666;
+    width: 50px;
+    margin-top: 3px;
+}
+.shop-footer .total-sum-box .shop-price em{
+    font-style: normal; 
+    font-size: 18px; 
+    color: red;
+}
+.shop-footer .calculation{
+    float: right;
+    width: 93px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    background-color: #ff0000; 
+    font-size: 14px;
+}
+.shop-footer .calculation em{
+    font-style: normal; 
+}
